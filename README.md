@@ -1,3 +1,3 @@
-# tknika-normadera
+# Normadera
 
-[Edit on StackBlitz ⚡️](https://stackblitz.com/edit/github-pakayc)
+Manual técnico de formación para la caracterización de madera de uso estructural
