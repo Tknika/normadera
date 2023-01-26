@@ -1,9 +1,10 @@
 ---
-import Layout from '../layouts/Layout.astro';
-import Card from '../components/Card.astro';
+import Landing from '../layouts/LandingLayout.astro';
+import Card from '../components/Landing/Card.astro';
+import CardMini from '../components/Landing/CardMini.astro'
 ---
 
-<Layout title="Normadera">
+<Landing title="Normadera">
 	<main>
 		<h1>Manual <span class="text-gradient">Normadera</span></h1>
 		<p class="instructions">
@@ -42,7 +43,23 @@ import Card from '../components/Card.astro';
 			/>
 		</ul>
 	</main>
-</Layout>
+  <main>
+    <ul role="list" class="link-minicard-grid">
+      <CardMini
+        href="/"
+        title="Fichas de especies"
+      />
+      <CardMini
+        href="/"
+        title="Videos"
+      />
+      <CardMini
+        href="/"
+        title="Clave dicotómica"
+      />
+    </ui>
+  </main>
+</Landing>
 
 <style>
 	main {
@@ -84,6 +101,12 @@ import Card from '../components/Card.astro';
 	.link-card-grid {
 		display: grid;
 		grid-template-columns: repeat(auto-fit, minmax(24ch, 1fr));
+		gap: 1rem;
+		padding: 0;
+	}
+	.link-minicard-grid {
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(14ch, 1fr));
 		gap: 1rem;
 		padding: 0;
 	}
