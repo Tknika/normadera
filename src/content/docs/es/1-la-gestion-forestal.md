@@ -34,7 +34,7 @@ El concepto de bosque es menos amplio que el de monte y está comprendido en és
 
 De acuerdo con la definición contenida en el glosario de términos selvícolas del Compendio de Selvicultura Aplicada en España (Serrada et al. 2008) se entiende por bosque el sitio poblado por árboles y matas.
 
-![Bosques](https://normadera.tknika.eus/system/files/imagenes_unidades/DSC_0156.jpg)
+![Bosques](/assets/DSC_0156.jpg)
 
 **Bosque**: Comunidad vegetal dominada por elementos típicamente arbóreos, que forman por lo menos un estrato de copas (dosel) más o menos continuo, generalmente de más de 5 m de altura. Espacio natural conformado por árboles, arbustos, hierbas, bacterias, hongos, protozoarios, artrópodos, otros invertebrados de todos los tamaños clases y descripciones, vertebrados, oxigeno, dióxido de carbono, agua, minerales y materia orgánica muerta, que en su totalidad constituyen el ecosistema forestal.
 
