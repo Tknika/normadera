@@ -1,0 +1,123 @@
+---
+import Landing from '../../layouts/LandingLayout.astro';
+import Card from '../../components/Landing/Card.astro';
+import CardMini from '../../components/Landing/CardMini.astro'
+---
+
+<Landing title="Normadera">
+	<main>
+		<h1><span class="text-gradient">Normadera</span></h1>
+		<p class="instructions">
+      <b>Manual Técnico</b> de formación para la caracterización de madera de uso estructural
+		</p>
+		<ul role="list" class="link-card-grid">
+			<Card
+				href="es/1-la-gestion-forestal"
+				title="1. La gestión forestal"
+				body="En esta unidad se explican los conceptos de monte y bosque, se precisa la legislación forestal y se indica la situación y los instrumentos para la gestión de los espacios forestales"
+			/>
+			<Card
+				href="es/2-identificacion-fichas-tecnicas-madera"
+				title="2. Procesado de la madera"
+				body="Son dos los objetivos que se presentan a continuación: por una parte, la identificación de la madera y la exposición de las fichas técnicas de 61 maderas distintas."
+			/>
+			<Card
+				href="es/3-procesado-de-la-madera"
+				title="3. Marcado CE y clasificación visual del abeto Douglas"
+				body="En esta unidad se procederá a realizar la explicación de la gestión de la especie de Abeto Douglas desde su plantación hasta su clasificación incluyendo las condiciones laborales de seguridad a seguir en cada uno de los procesos."
+			/>
+      <Card
+				href="es/4-marcado-ce-clasificacion-douglas"
+				title="4. Marcado CE y clasificación visual del abeto Douglas"
+				body="En esta unidad se explicarán los requerimientos exigibles para el marcado CE de la madera y se didactificarán los apartados referentes a la metodología para la clasificación visual del abeto Douglas."
+			/>
+      <Card
+				href="es/5-clasificacion-caracterizacion-madera-estructural"
+				title="5. Clasificación y Proceso de caracterización de la madera estructural"
+				body="En esta unidad se detalla todo el proceso seguido para la caracterización de la madera de Abeto Douglas desde el árbol en pie hasta los ensayos de laboratorio. Se incluye también un manual didáctico de la clasificación visual realizada para esta especie."
+			/>
+      <Card
+				href="es/6-diseño de estructuras de madera"
+				title="6. Diseño de estructuras de madera"
+				body="En esta unidad se realizará una didactificación del diseño y cálculo de estructuras de madera empleando el programa Cad-Work."
+			/>
+		</ul>
+	</main>
+  <main>
+    <ul role="list" class="link-minicard-grid">
+      <CardMini
+        href="/"
+        title="Fichas de especies"
+      />
+      <CardMini
+        href="/"
+        title="Videos"
+      />
+      <CardMini
+        href="/"
+        title="Clave dicotómica"
+      />
+    </ui>
+  </main>
+</Landing>
+
+<style>
+  html { 
+    background: url(/src/assets/landing/forest_gradient.png) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
+	main {
+		margin: auto;
+		padding: 1.5rem;
+		max-width: 60ch;
+	}
+	h1 {
+		font-size: 3rem;
+		font-weight: 800;
+    color: white;
+		margin: 0;
+	}
+	.text-gradient {
+		background-image: var(--accent-gradient);
+		-webkit-background-clip: text;
+		-webkit-text-fill-color: transparent;
+		background-size: 400%;
+		background-position: 0%;
+	}
+	.instructions {
+		line-height: 1.6;
+		margin: 1rem 0;
+		//border: 1px solid rgba(var(--accent), 25%);
+		//background-color: white;
+		font-size: 1.25rem;
+		color: white;
+		padding: 1rem;
+		border-radius: 0.4rem;
+	}
+	.instructions code {
+		font-size: 0.875em;
+		font-weight: bold;
+		background: rgba(var(--accent), 12%);
+		color: rgb(var(--accent));
+		border-radius: 4px;
+		padding: 0.3em 0.45em;
+	}
+	.instructions strong {
+		color: rgb(var(--accent));
+	}
+	.link-card-grid {
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(24ch, 1fr));
+		gap: 1rem;
+		padding: 0;
+	}
+	.link-minicard-grid {
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(14ch, 1fr));
+		gap: 1rem;
+		padding: 0;
+	}
+</style>
