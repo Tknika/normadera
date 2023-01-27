@@ -2,6 +2,7 @@
 import Landing from '../../layouts/LandingLayout.astro';
 import Card from '../../components/Landing/Card.astro';
 import CardMini from '../../components/Landing/CardMini.astro'
+import NormaderaLogo from '../../components/Header/NormaderaLogo.astro'
 
 import LanguageSelect from '../../components/Header/LanguageSelect';
 
@@ -18,7 +19,7 @@ const lang = 'es';
     </nav>
   </header>
 	<main>
-		<h1><span class="text-gradient">Normadera</span></h1>
+		<h1><NormaderaLogo size={40} /><span class="text-gradient">Normadera</span></h1>
 		<p class="instructions">
       <b>Manual Técnico</b> de formación para la caracterización de madera de uso estructural
 		</p>
@@ -86,8 +87,7 @@ const lang = 'es';
 		height: var(--theme-navbar-height);
 		width: 100%;
 		background-color: var(--theme-navbar-bg);
-    //background-color: white;
-    color: white;
+    color: hsla(var(--color-base-white), 100%, 1);;
 		display: flex;
 		align-items: center;
 		justify-content: center;

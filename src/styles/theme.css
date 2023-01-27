@@ -97,14 +97,14 @@ body {
 
   /* @@@: not used anywhere */
   --theme-text-lighter: hsla(var(--color-gray-40), 1);
-  --theme-bg: rgba(41, 53, 40, 0.719);
+  --theme-bg: rgb(31, 39, 31);
   --theme-bg-hover: hsla(var(--color-gray-40), 1);
   --theme-bg-offset: hsla(var(--color-gray-5), 1);
   --theme-code-inline-bg: hsla(var(--color-gray-10), 1);
   --theme-code-inline-text: hsla(var(--color-base-white), 100%, 1);
   --theme-code-bg: hsla(var(--color-gray-5), 1);
   --theme-code-text: hsla(var(--color-base-white), 100%, 1);
-  --theme-navbar-bg: #252d26;
+  --theme-navbar-bg: ##1f271f;
   --theme-selection-color: hsla(var(--color-base-white), 100%, 1);
   --theme-selection-bg: hsla(var(--color-purple), var(--theme-accent-opacity));
 
