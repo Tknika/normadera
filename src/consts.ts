@@ -71,6 +71,38 @@ export const SIDEBAR: Sidebar = {
       { text: 'Créditos', link: 'es/creditos' },
     ],
   },
+  eu: {
+    Edukiak: [
+      { text: '0. Proiektuari buruz', link: 'eu/0-introduccion' },
+      { text: '1. La gestión forestal', link: 'es/1-la-gestion-forestal' },
+      {
+        text: '2. Identificación y fichas técnicas de la madera',
+        link: 'es/2-identificacion-fichas-tecnicas-madera',
+      },
+      {
+        text: '3. Procesado de la madera',
+        link: 'es/3-procesado-de-la-madera',
+      },
+      {
+        text: '4. Marcado CE y clasificación visual del abeto Douglas',
+        link: 'es/4-marcado-ce-clasificacion-douglas',
+      },
+      {
+        text: '5. Clasificación y proceso de caracterización de la madera estructural',
+        link: 'es/5-clasificacion-caracterizacion-madera-estructural',
+      },
+      {
+        text: '6. Diseño de estructuras de madera',
+        link: 'es/6-diseño de estructuras de madera',
+      },
+    ],
+    Información: [
+      { text: 'Fichas de especies', link: 'es/fichas-de-especies' },
+      { text: 'Videos', link: 'es/videos' },
+      { text: 'Clave dicotómica', link: 'es/clave-dicotomica' },
+      { text: 'Créditos', link: 'es/creditos' },
+    ],
+  },
   en: {
     'Section Header': [
       { text: 'Introduction', link: 'en/introduction' },
