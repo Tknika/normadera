@@ -3,9 +3,20 @@ import Landing from '../../layouts/LandingLayout.astro';
 import Card from '../../components/Landing/Card.astro';
 import CardMini from '../../components/Landing/CardMini.astro'
 
+import LanguageSelect from '../../components/Header/LanguageSelect';
+
+const KNOWN_LANGUAGE_CODES = ['es', 'eu'];
+const lang = 'es';
+
 ---
 
 <Landing title="Normadera">
+  <header>
+    <nav class="nav-wrapper" title="Top Navigation">
+      <div style="flex-grow: 1;"></div>
+      {KNOWN_LANGUAGE_CODES.length > 1 && <LanguageSelect lang={lang} client:idle />}
+    </nav>
+  </header>
 	<main>
 		<h1><span class="text-gradient">Normadera</span></h1>
 		<p class="instructions">
@@ -70,6 +81,20 @@ import CardMini from '../../components/Landing/CardMini.astro'
     -o-background-size: cover;
     background-size: cover;
   }
+  header {
+		z-index: 11;
+		height: var(--theme-navbar-height);
+		width: 100%;
+		background-color: var(--theme-navbar-bg);
+    //background-color: white;
+    color: white;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		overflow: hidden;
+		position: sticky;
+		top: 0;
+	}
 	main {
 		margin: auto;
 		padding: 1.5rem;
@@ -80,6 +105,15 @@ import CardMini from '../../components/Landing/CardMini.astro'
 		font-weight: 800;
     color: white;
 		margin: 0;
+	}
+  .nav-wrapper {
+		display: flex;
+		align-items: center;
+		justify-content: flex-end;
+		gap: 1em;
+		width: 100%;
+		max-width: 82em;
+		padding: 0 1rem;
 	}
 	.text-gradient {
 		background-image: var(--accent-gradient);
