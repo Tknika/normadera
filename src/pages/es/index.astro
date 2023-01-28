@@ -20,7 +20,7 @@ const lang = 'es';
 	<main>
 		<h1><NormaderaLogo size={60} /><span class="title">Normadera</span></h1>
 		<p class="instructions">
-      <b>Manual Técnico</b> de formación para la caracterización de madera de uso estructural
+      <b>Manual Técnico</b> de formación para la caracterización de madera de uso estructural. <a href="0-introduccion">Más información</a>
 		</p>
 		<ul role="list" class="link-card-grid">
 			<Card
@@ -29,27 +29,27 @@ const lang = 'es';
 				body="En esta unidad se explican los conceptos de monte y bosque, se precisa la legislación forestal y se indica la situación y los instrumentos para la gestión de los espacios forestales"
 			/>
 			<Card
-				href="es/2-identificacion-fichas-tecnicas-madera"
+				href="2-identificacion-fichas-tecnicas-madera"
 				title="2. Procesado de la madera"
 				body="Son dos los objetivos que se presentan a continuación: por una parte, la identificación de la madera y la exposición de las fichas técnicas de 61 maderas distintas."
 			/>
 			<Card
-				href="es/3-procesado-de-la-madera"
+				href="3-procesado-de-la-madera"
 				title="3. Marcado CE y clasificación visual del abeto Douglas"
 				body="En esta unidad se procederá a realizar la explicación de la gestión de la especie de Abeto Douglas desde su plantación hasta su clasificación incluyendo las condiciones laborales de seguridad a seguir en cada uno de los procesos."
 			/>
       <Card
-				href="es/4-marcado-ce-clasificacion-douglas"
+				href="4-marcado-ce-clasificacion-douglas"
 				title="4. Marcado CE y clasificación visual del abeto Douglas"
 				body="En esta unidad se explicarán los requerimientos exigibles para el marcado CE de la madera y se didactificarán los apartados referentes a la metodología para la clasificación visual del abeto Douglas."
 			/>
       <Card
-				href="es/5-clasificacion-caracterizacion-madera-estructural"
+				href="5-clasificacion-caracterizacion-madera-estructural"
 				title="5. Clasificación y Proceso de caracterización de la madera estructural"
 				body="En esta unidad se detalla todo el proceso seguido para la caracterización de la madera de Abeto Douglas desde el árbol en pie hasta los ensayos de laboratorio. Se incluye también un manual didáctico de la clasificación visual realizada para esta especie."
 			/>
       <Card
-				href="es/6-diseño de estructuras de madera"
+				href="6-diseño de estructuras de madera"
 				title="6. Diseño de estructuras de madera"
 				body="En esta unidad se realizará una didactificación del diseño y cálculo de estructuras de madera empleando el programa Cad-Work."
 			/>
@@ -103,7 +103,8 @@ const lang = 'es';
 	}
 	h1 {
 		font-size: 2rem;
-		font-weight: 800;
+		transition: font-size 1s;
+    font-weight: 800;
     color: hsla(41, 100%, 59%, 1);
     background-size: 400%;
 		margin: 0;
@@ -114,6 +115,10 @@ const lang = 'es';
     justify-content:center;
     place-items: center;
 	}
+  a {
+    color: hsla(41, 100%, 59%, 1);
+    font-weight: 500;
+  }
  
   .nav-wrapper {
 		display: flex;
@@ -124,13 +129,6 @@ const lang = 'es';
 		max-width: 82em;
 		padding: 0 1rem;
     padding-top: 1rem;
-	}
-	.text-gradient {
-		background-image: var(--accent-gradient);
-		-webkit-background-clip: text;
-		-webkit-text-fill-color: transparent;
-		background-size: 400%;
-		background-position: 0%;
 	}
 	.instructions {
 		line-height: 1.6;

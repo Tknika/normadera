@@ -104,7 +104,7 @@ body {
   --theme-code-inline-text: hsla(var(--color-base-white), 100%, 1);
   --theme-code-bg: hsla(var(--color-gray-5), 1);
   --theme-code-text: hsla(var(--color-base-white), 100%, 1);
-  --theme-navbar-bg: ##1f271f;
+  --theme-navbar-bg: #1f271f;
   --theme-selection-color: hsla(var(--color-base-white), 100%, 1);
   --theme-selection-bg: hsla(var(--color-purple), var(--theme-accent-opacity));
 
