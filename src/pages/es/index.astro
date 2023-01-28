@@ -10,7 +10,6 @@ const KNOWN_LANGUAGE_CODES = ['es', 'eu'];
 const lang = 'es';
 
 ---
-
 <Landing title="Normadera">
   <header>
     <nav class="nav-wrapper" title="Top Navigation">
@@ -19,7 +18,7 @@ const lang = 'es';
     </nav>
   </header>
 	<main>
-		<h1><NormaderaLogo size={40} /><span class="text-gradient">Normadera</span></h1>
+		<h1><NormaderaLogo size={60} /><span class="title">Normadera</span></h1>
 		<p class="instructions">
       <b>Manual Técnico</b> de formación para la caracterización de madera de uso estructural
 		</p>
@@ -81,14 +80,16 @@ const lang = 'es';
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
+    --theme-text-accent: hsla(41, 100%, 59%, 1);
   }
   header {
 		z-index: 11;
 		height: var(--theme-navbar-height);
 		width: 100%;
 		background-color: var(--theme-navbar-bg);
-    color: hsla(var(--color-base-white), 100%, 1);;
-		display: flex;
+    //color: hsla(var(--color-base-white), 100%, 1);;
+		color: white;
+    display: flex;
 		align-items: center;
 		justify-content: center;
 		overflow: hidden;
@@ -101,11 +102,19 @@ const lang = 'es';
 		max-width: 60ch;
 	}
 	h1 {
-		font-size: 3rem;
+		font-size: 2rem;
 		font-weight: 800;
-    color: white;
+    color: hsla(41, 100%, 59%, 1);
+    background-size: 400%;
 		margin: 0;
+    text-align: center;
+    display: grid;
+    grid-template-columns: repeat(1,min-content);
+    align-content: center;
+    justify-content:center;
+    place-items: center;
 	}
+ 
   .nav-wrapper {
 		display: flex;
 		align-items: center;
@@ -114,6 +123,7 @@ const lang = 'es';
 		width: 100%;
 		max-width: 82em;
 		padding: 0 1rem;
+    padding-top: 1rem;
 	}
 	.text-gradient {
 		background-image: var(--accent-gradient);
@@ -125,8 +135,6 @@ const lang = 'es';
 	.instructions {
 		line-height: 1.6;
 		margin: 1rem 0;
-		//border: 1px solid rgba(var(--accent), 25%);
-		//background-color: white;
 		font-size: 1.25rem;
 		color: white;
 		padding: 1rem;
@@ -155,4 +163,21 @@ const lang = 'es';
 		gap: 1rem;
 		padding: 0;
 	}
+
+  @media (min-width: 30em) {
+    h1{
+      font-size: 3rem;
+      //display: block;
+    }
+  }
+
+  @media (min-width: 40em) {
+    h1{
+      font-size: 4rem;
+      display: block;
+    }
+    .title {
+      margin-left: 10px;
+    }
+  }
 </style>
