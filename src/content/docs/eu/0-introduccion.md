@@ -1,52 +1,52 @@
 ---
-title: "Ezaugarritasuna Caracterización de madera de uso estructural"
-description: "Manual técnico para la caracterización de madera de uso estructural"
+title: "Egitura-erabilerako zura ezaugarritzea"
+description: "Egitura-erabilerako zura ezaugarritzeko prestakuntzako eskuliburu teknikoa"
 ---
 
 ## Proiektuaren oinarriak
 
-El presente Proyecto se impulsó con el objetivo principal de preparar materiales didácticos para ciclos de formación profesional, al objeto de apoyar la formación de especialistas en caracterización y comercialización de productos de la madera. Su duración es de un año y surgió del [CIFP Bidasoa](https://bidasoa.hezkuntza.net/eu/inicio) de Irún, en el marco de la Comunidad Autónoma del País Vasco, si bien es de ámbito nacional.
+Proiektu hau lanbide-heziketako zikloetarako ikasmaterialak prestatzeko helburu nagusiarekin bultzatu zen, espezialistak prestatzen laguntzeko zurezko produktuak ezaugarritzen eta merkaturatzen. Urtebeteko iraupena du eta Irungo [Bidasoa LHII](https://bidasoa.hezkuntza.net/eu/inicio)tik sortu zen, Euskal Autonomia Erkidegoaren barruan, nahiz eta nazio-mailakoa den.
 
-Debe señalarse como logro del desarrollo de este Proyecto, la realización de un Ensayo Inicial de Tipo para calcular el “perfil resistente” de la madera de la especie Pseudotsuga menziesii (_Abeto Douglas_), y el alerce (_Larix kaempeferi_) dado que las señaladas especies no cuentan con una normativa específica propia, que avale el cumplimiento de dicho material con los requisitos exigibles como material de construcción homologable.
+Proiektu honen garapenaren lorpen gisa adierazi behar da hasierako eredu-saiakuntza bat egin dela Pseudotsuga menziesii (Douglas izeia) eta laritza (Larix kaempeferi) espezieen zuraren "profil erresistentea" kalkulatzeko, espezie horiek ez baitute berariazko araudi propiorik bermatzeko material horrek eraikuntza-material homologagarri gisa eska daitezkeen eskakizunak betetzen dituela.
 
-Hubiera sido impensable la consecución de este Proyecto sin la colaboración de entidades como [TKNIKA](https://tknika.eus/) (Centro de Innovación para la Formación Profesional), y sin la colaboración logística, económica y de provisión de materia prima (madera), de la Dirección de Innovación e Industrias Alimentarias del Gobierno Vasco; de la Diputación Foral de Gipuzkoa (Dirección General de Montes y Medio Natural); del Gobierno de Navarra (Departamento de Desarrollo Rural, Medio Ambiente y Administración Local) ; y de las empresas del sector de la madera del País Vasco y de Navarra, que han apoyado este Proyecto desde sus inicios.
+Proiektu hau lortzea ezinezkoa izango zen [TKNIKA](https://tknika.eus/)ren (Lanbide Heziketarako Berrikuntzako Zentroaren) lankidetzarik gabe eta beste erakunde hauek eskainitako lankidetza logistiko, ekonomiko eta lehengai-hornidurakorik (zur-hornidurakorik) gabe: Eusko Jaurlaritzako Berrikuntzako eta Elikagaien Industriako Zuzendaritzak; Gipuzkoako Foru Aldundiak (Mendietako eta Natura Inguruneko Zuzendaritza Nagusiak); Nafarroako Gobernuak (Landa Garapeneko, Ingurumeneko eta Toki Administrazioko Departamentuak), eta Euskal Autonomia Erkidegoko eta Nafarroako zuraren sektoreko enpresek, hots, proiektu hau hastapenetatik bultzatu dutenek.
 
-## La importancia de la madera en la construcción
+## Zurak eraikuntzan duen garrantzia
 
-En un sentido global, la industria de la madera abarca la transformación de la madera en productos de consumo. Haciendo una clasificación sencilla, distinguimos entre empresas de primera transformación, que originan productos semielaborados (empresas de tableros, aserrado y preparación industrial de la madera), de segunda transformación que proporcionan productos finales (empresas de envases y embalajes, de muebles, carpinterías…) y, cerrando el ciclo, también incluye a las empresas gestoras de biomasas de madera recuperada.
+Oro har, zuraren industriak zura kontsumo-produktu bihurtzea hartzen du barruan. Sailkapen xumea eginez, honako enpresa mota hauek bereizten ditugu: lehen transformazioko enpresak, produktu erdilanduak sortzen dituztenak (ohol-enpresak, zerrategiak eta zuraren prestakuntza industrialekoak); bigarren transformaziokoak, azken produktuak sortzen dituztenak (ontzi eta bilgarriak egiten dituzten enpresak, altzari-enpresak, zurgindegiak…); eta, zikloa itxiz, berreskuratutako zureko biomasak kudeatzen dituzten enpresak.
 
-En la actualidad el sector español de la madera ha emprendido el camino de convertir los retos en oportunidades, mejorando día a día su competitividad, apostando por la tecnología y la sostenibilidad.
+Gaur egun, Espainiako zur-sektoreak erronkak aukera bihurtzeko bideari ekin dio, eta egunetik egunera bere lehiakortasuna hobetzen du, teknologiaren eta iraunkortasunaren alde eginda.
 
-En este sentido, si tratamos de buscar un material versátil, sostenible, renovable, ligero, resistente y reciclable, que no contamine y sea efectivo contra el cambio climático, sólo podemos estar hablando de la madera.
+Ildo horretan, material moldaerraza, iraunkorra, berriztagarria, arina, erresistentea eta birziklagarria, kutsatzen ez duena eta klima-aldaketaren kontra eraginkorra dena bilatu nahi badugu, zura besterik ezin dugu aukeratu.
 
-Apostar por la madera es apostar por la ecología. Es cuidar de nuestro entorno con un material renovable, reciclable y natural, sin residuos contaminantes.
+Zuraren aldeko apustua egitea ekologiaren aldeko apustua egitea da. Gure ingurunea zaintzea da, material berriztagarri, birziklagarri, natural eta hondakin kutsakorrik sortzen ez duenarekin.
 
-La industria de la madera en España es consciente de sus necesidades de abastecimiento, y es la primera interesada en disponer de recursos suficientes para mantener su actividad, por eso apuesta por una Gestión Forestal Sostenible que asegure el futuro de los bosques.
+Espainiako zur-industriak garbi du zer hornidura-premia dituen, eta beste inori baino gehiago interesatzen zaio bere jarduerari eusteko nahikoa baliabide edukitzea; horrexegatik egiten du basoen etorkizuna ziurtatzen duen baso-kudeaketa iraunkorraren alde.
 
-Los avances tecnológicos aplicados a la madera que se han desarrollado en los últimos años han permitido terminar con uno de los mitos existentes en relación a este material: que el uso de la madera va ligado a las construcciones tradicionales. Nada más lejos de la realidad. Hoy en día, se desarrollan permanentemente obras de ingeniería totalmente vanguardistas realizadas con madera técnica.
+Azken urteotan garatu eta zurari aplikatu zaizkion aurrerapen teknologikoei esker, material honen inguruan zeuden mitoetako bat ezabatu da, hauxe:zuraren erabilera eraikuntza tradizionalei lotuta dagoela. Eta hori ez da, inondik ere, egia. Gaur egun, zur teknikoa erabiltzen duten ingeniaritza-obra guztiz abangoardistak egiten dira.
 
-Se construyen en la actualidad naves de dimensiones espectaculares, con luces impresionantes que dan lugar a espacios diáfanos gracias a las excelentes características físico-mecánicas que ofrece la madera, instalaciones deportivas, centros comerciales, restaurantes, bodegas, hoteles, edificios públicos que demuestran su versatilidad y gran cualidad.
+Oso tamaina handiko nabeak eraikitzen dira, eta horiei argi ikaragarriak jarrita, espazio diafanoak sortzen dira, zurak dituen ezaugarri fisiko eta mekaniko bikainei esker: kirol-instalazioak, merkataritzaguneak, jatetxeak, upeltegiak, hotelak eta eraikin publikoak, modlagarritasun eta kalitate handia erakusgarri dutenak.
 
-A nivel constructivo, la madera ofrece muchas ventajas. Por su ligereza y fácil ajuste en obra, las estructuras de madera permiten aminorar los tiempos de montaje con respecto a otros materiales.
+Eraikuntzari dagokionez, zurak abantaila ugari eskaintzen ditu. Arinak eta obretan moldaerrazak direnez gero, zurezko egiturak erabiliz beste material batzuk erabiliz baino denbora gutxiago behar izaten da muntaiak egiteko.
 
-El sector de la madera ha avanzado también de manera notable ofreciendo nuevos productos que se adaptan a las necesidades de sus usuarios y que cumplen con todas las prestaciones técnicas reglamentarias.
+Zuraren sektoreak, halaber, nabarmen egin du aurrera eta produktu berriak eskaintzen ditu erabiltzaileen premietara egokitzen eta arauzko prestazio tekniko guztiak betetzen dituztenak.
 
-La resistencia, la calidad, la seguridad, el calor y el color que proporciona la madera quedan patentes en todas y cada una de las construcciones que utilizan este noble material, cuyos resultados son, además, visualmente insuperables.
+Zurak ematen dituen erresistentzia, kalitatea, segurtasuna, beroa eta kolorea garbi ikusten dira material noble horrekin egiten diren eraikuntza guztietan; eta, gainera, emaitza bisualki gaindiezinak lortzen dira.
 
-Con este proyecto, se ha tratado de crear materiales didácticos a nivel de formación profesional para apoyar la formación de especialistas en caracterización y comercialización de productos de madera. Y por otro lado, se ha realizado la caracterización de la de abeto Douglas porque no disponen de una normativa que soporte su certificación como producto marcado CE de cara a su utilización en construcción.
+Proiektu honekin, Lanbide Heziketarako material didaktikoak sortu nahi izan ditugu, zurezko produktuak ezaugarritzeko eta merkaturatzeko espezialisten prestakuntzarako laguntza emateko. Bestalde, Douglas izeiaren zura ezaugarritu dugu ez baitago hura CE markako produktu gisa ziurtatzeko araudirik, betiere eraikuntzan erabiltzeari dagokionez.
 
 ## Bibliografia
 
-- JACKSON Albert; DAY David: Manual completo de la madera, la carpintería y la ebanistería, Ediciones del Prado, Madrid, 1993.
-- MEDINA, Gonzalo: Pavimentos de madera, Ediciones AITIM, Madrid, 2005.
+- JACKSON Albert; DAY David:Manual completo de la madera, la carpintería y la ebanistería, Ediciones del Prado, Madril, 1993.
+- MEDINA, Gonzalo: Pavimentos de madera, Ediciones AITIM, Madril, 2005.
 - MONOGRAFICO DE A.E.I.M, nº 2: Especies de madera, 2007/2008.
-- PERAZA, Fernando: Protección preventiva de la madera, Ediciones AITIM, Madrid, 2001.
-- VIGNOTE, Santiago: Tecnología de la madera, Ediciones Mundiprensa, Madrid eta Barcelona, 2006.
-- VILLADANGOS, P: Tecnología de la madera, Ediciones Edebé, Madrid, 1997.
-- NUTSCH, Wolfgang: Tecnología de la madera y el mueble, Ediciones Reverté, Madrid, 1996.
-- Especies de madera CDa, Ediciones AITIM, Madrid, 2005
-- Manual de Control de Producción en Fábrica genérico para productos de madera, editado por Cesefor.
-- Artículo: El Marcado CE ya es una realidad en el sector de la madera. Autores: Edgar Lafuente Jiménez, técnico Marcado CE del Ärea I+D+i y responsable de la Marca de Garantía Pino Soria Burgos, Miguel Broto Cartagena, jefe del Área I+D+i de Cesefor. Editado en la revista digital interempresas, 25 de julio de 2011.
-- Marcado CE. Cesefor: Ficha comercial de Cesefor.
-- Marcado CE. Productos de madera. Documento divulgativo editado y distribuido por Cesefor.
-- Marcado CE en madera estructural. Documento divulgativo editado y distribuido por Cesefor.
+- PERAZA, Fernando: Protección preventiva de la madera, Ediciones AITIM, Madril, 2001.
+- VIGNOTE, Santiago: Tecnología de la madera, Ediciones Mundiprensa, Madril eta Bartzelona, 2006.
+- VILLADANGOS, P: Tecnología de la madera, Ediciones Edebé, Madril, 1997.
+- NUTSCH, Wolfgang: Tecnología de la madera y el mueble, Ediciones Reverté, Madril, 1996.
+- Especies de madera CDa, Ediciones AITIM, Madril, 2005.
+- Manual de Control de Producción en Fábrica genérico para productos de madera, Cesefor-ek argitaratua.
+- Artikulua: El Marcado CE ya es una realidad en el sector de la madera. Egileak: Edgar Lafuente Jimenez, I+G+B arloko CE markaren teknikaria eta Pino Soria Burgos berme-markaren arduraduna, Miguel Broto Cartagena, Ceseforreko I+G+B arloko burua. Interempresas aldizkari digitalean argitaratua, 2011ko uztailaren 25ean.
+- CE marka. Cesefor: Ceseforren fitxa komertziala.
+- Marcado CE. Productos de madera. Ceseforrek argitaratu eta banatutako dibulgaziozko dokumentua.
+- Marcado CE en madera estructural. Ceseforrek argitaratu eta banatutako dibulgaziozko dokumentua.
