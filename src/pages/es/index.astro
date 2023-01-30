@@ -71,6 +71,9 @@ const lang = 'es';
       />
     </ui>
   </main>
+	<div class="footer">
+		<img src="/assets/images/tknika.png" alt="Tknika logo">
+	</div>
 </Landing>
 
 <style>
@@ -82,6 +85,9 @@ const lang = 'es';
     background-size: cover;
     --theme-text-accent: hsla(41, 100%, 59%, 1);
   }
+	body{
+		margin: 0px;
+	}
   header {
 		z-index: 11;
 		height: var(--theme-navbar-height);
@@ -161,11 +167,20 @@ const lang = 'es';
 		gap: 1rem;
 		padding: 0;
 	}
+	.footer {
+		margin: 0 auto;
+		padding-top: 2rem;
+		padding-bottom: 2rem;
+  	position: relative;
+  	width: 100%;
+  	background: black;
+		color: white;		
+		text-align: center;
+}
 
   @media (min-width: 30em) {
     h1{
       font-size: 3rem;
-      //display: block;
     }
   }
 
