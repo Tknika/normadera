@@ -17,9 +17,9 @@ export const OPEN_GRAPH = {
 
 export const KNOWN_LANGUAGES = {
   Castellano: 'es',
-  English: 'en',
+  //English: 'en',
   Euskara: 'eu',
-  Français: 'fr',
+  //Français: 'fr',
 } as const;
 export const KNOWN_LANGUAGE_CODES = Object.values(KNOWN_LANGUAGES);
 

@@ -2,44 +2,56 @@
 import Landing from '../../layouts/LandingLayout.astro';
 import Card from '../../components/Landing/Card.astro';
 import CardMini from '../../components/Landing/CardMini.astro'
----
+import NormaderaLogo from '../../components/Header/NormaderaLogo.astro'
 
+import LanguageSelect from '../../components/Header/LanguageSelect';
+
+const KNOWN_LANGUAGE_CODES = ['es', 'eu'];
+const lang = 'eu';
+
+---
 <Landing title="Normadera">
+  <header>
+    <nav class="nav-wrapper" title="Top Navigation">
+      <div style="flex-grow: 1;"></div>
+      {KNOWN_LANGUAGE_CODES.length > 1 && <LanguageSelect lang={lang} client:idle />}
+    </nav>
+  </header>
 	<main>
-		<h1><span class="text-gradient">Normadera</span></h1>
+		<h1><NormaderaLogo size={60} /><span class="title">Normadera</span></h1>
 		<p class="instructions">
-      <b>Manual Técnico</b> de formación para la caracterización de madera de uso estructural
+      Egitura-erabilerako zura ezaugarritzeko prestakuntzako <b>eskuliburu teknikoa</b>. <a href="0-introduccion">Informazio gehiago</a>
 		</p>
 		<ul role="list" class="link-card-grid">
 			<Card
-				href="es/1-la-gestion-forestal"
-				title="1. La gestión forestal"
-				body="En esta unidad se explican los conceptos de monte y bosque, se precisa la legislación forestal y se indica la situación y los instrumentos para la gestión de los espacios forestales"
+				href="1-la-gestion-forestal"
+				title="1. Baso kudeaketa"
+				body="Unitate honetan, mendiaren eta basoaren kontzeptuak azaltzen dira, baso-legeria zehazten da, eta baso-espazioak kudeatzeko egoera eta tresnak adierazten dira."
 			/>
 			<Card
-				href="es/2-identificacion-fichas-tecnicas-madera"
-				title="2. Procesado de la madera"
-				body="Son dos los objetivos que se presentan a continuación: por una parte, la identificación de la madera y la exposición de las fichas técnicas de 61 maderas distintas."
+				href="2-identificacion-fichas-tecnicas-madera"
+				title="2. Zuraren identifikazioa eta fitxa teknikoak"
+				body="Jarraian, bi helburu ematen dira aditzera: alde batetik, zura identifikatzea eta, bestetik, 61 zuren fitxa teknikoak azaltzea."
 			/>
 			<Card
-				href="es/3-procesado-de-la-madera"
-				title="3. Marcado CE y clasificación visual del abeto Douglas"
-				body="En esta unidad se procederá a realizar la explicación de la gestión de la especie de Abeto Douglas desde su plantación hasta su clasificación incluyendo las condiciones laborales de seguridad a seguir en cada uno de los procesos."
+				href="3-procesado-de-la-madera"
+				title="3. Zura prozesatzea"
+				body="Unitate didaktiko honetan, Douglas izei-espeziearen kudeaketa azalduko da, landatzen denetik sailkatzen den arte, prozesu bakoitzean jarraitu beharreko laneko segurtasun-baldintzak barne direla."
 			/>
       <Card
-				href="es/4-marcado-ce-clasificacion-douglas"
-				title="4. Marcado CE y clasificación visual del abeto Douglas"
-				body="En esta unidad se explicarán los requerimientos exigibles para el marcado CE de la madera y se didactificarán los apartados referentes a la metodología para la clasificación visual del abeto Douglas."
+				href="4-marcado-ce-clasificacion-douglas"
+				title="4. Douglas izeiaren CE marka eta begizko sailkapena"
+				body="Unitate honetan, zuraren CE marka ezartzeko finkatutako eskakizunak azalduko dira eta Douglas izeia begiz sailkatzeko metodologiari buruzko atal didaktikoak jasoko dira."
 			/>
       <Card
-				href="es/5-clasificacion-caracterizacion-madera-estructural"
-				title="5. Clasificación y Proceso de caracterización de la madera estructural"
-				body="En esta unidad se detalla todo el proceso seguido para la caracterización de la madera de Abeto Douglas desde el árbol en pie hasta los ensayos de laboratorio. Se incluye también un manual didáctico de la clasificación visual realizada para esta especie."
+				href="5-clasificacion-caracterizacion-madera-estructural"
+				title="5. Egitura-zuraren sailkapena eta hura ezaugarritzeko prozesua"
+				body="Unitate honetan, Douglas izeiaren zura ezaugarritzeko jarraitutako prozesu osoa zehazten da; zuhaitza zutik dagoenetik hasita, laborategiko saiakuntzetara iritsi arte. Era berean, espezie horretarako egindako begizko sailkapenaren eskuliburu didaktikoa barnean hartzen da."
 			/>
       <Card
-				href="es/6-diseño de estructuras de madera"
-				title="6. Diseño de estructuras de madera"
-				body="En esta unidad se realizará una didactificación del diseño y cálculo de estructuras de madera empleando el programa Cad-Work."
+				href="6-diseño de estructuras de madera"
+				title="6. Zurezko egituren diseinua"
+				body="Unitate honetan, zurezko egiturak diseinatu eta kalkulatzeari buruzko atal didaktikoak jorratuko dira, Cad-Work programa erabilita."
 			/>
 		</ul>
 	</main>
@@ -47,18 +59,23 @@ import CardMini from '../../components/Landing/CardMini.astro'
     <ul role="list" class="link-minicard-grid">
       <CardMini
         href="/"
-        title="Fichas de especies"
+        title="Espezieen fitxak"
       />
       <CardMini
         href="/"
-        title="Videos"
+        title="Bideoak"
       />
       <CardMini
         href="/"
-        title="Clave dicotómica"
+        title="Gako dikotomikoa"
       />
     </ui>
   </main>
+	<div class="footer">
+		<a href="https://www.tknika.eus">
+			<img src="/assets/tknika.png" alt="Tknika logo" width="300">
+		</a>
+	</div>
 </Landing>
 
 <style>
@@ -68,30 +85,62 @@ import CardMini from '../../components/Landing/CardMini.astro'
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
+    --theme-text-accent: hsla(41, 100%, 59%, 1);
   }
+	body{
+		margin: 0px;
+	}
+  header {
+		z-index: 11;
+		height: var(--theme-navbar-height);
+		width: 100%;
+		background-color: var(--theme-navbar-bg);
+    //color: hsla(var(--color-base-white), 100%, 1);;
+		color: white;
+    display: flex;
+		align-items: center;
+		justify-content: center;
+		overflow: hidden;
+		position: sticky;
+		top: 0;
+	}
 	main {
 		margin: auto;
 		padding: 1.5rem;
 		max-width: 60ch;
 	}
 	h1 {
-		font-size: 3rem;
-		font-weight: 800;
-    color: white;
+		font-size: 2rem;
+		transition: font-size 1s;
+    font-weight: 800;
+    color: hsla(41, 100%, 59%, 1);
+    background-size: 400%;
 		margin: 0;
+    text-align: center;
+    display: grid;
+    grid-template-columns: repeat(1,min-content);
+    align-content: center;
+    justify-content:center;
+    place-items: center;
 	}
-	.text-gradient {
-		background-image: var(--accent-gradient);
-		-webkit-background-clip: text;
-		-webkit-text-fill-color: transparent;
-		background-size: 400%;
-		background-position: 0%;
+  a {
+    color: hsla(41, 100%, 59%, 1);
+    font-weight: 500;
+  }
+ 
+  .nav-wrapper {
+		display: flex;
+		align-items: center;
+		justify-content: flex-end;
+		gap: 1em;
+		width: 100%;
+		max-width: 82em;
+		padding: 0 1rem;
+    padding-top: 1rem;
 	}
 	.instructions {
 		line-height: 1.6;
 		margin: 1rem 0;
-		//border: 1px solid rgba(var(--accent), 25%);
-		//background-color: white;
 		font-size: 1.25rem;
 		color: white;
 		padding: 1rem;
@@ -120,4 +169,30 @@ import CardMini from '../../components/Landing/CardMini.astro'
 		gap: 1rem;
 		padding: 0;
 	}
+	.footer {
+		margin: 0 auto;
+		padding-top: 1rem;
+		padding-bottom: 1rem;
+  	position: relative;
+  	width: 100%;
+  	background: black;
+		color: white;		
+		text-align: center;
+	}
+
+  @media (min-width: 30em) {
+    h1{
+      font-size: 3rem;
+    }
+  }
+
+  @media (min-width: 40em) {
+    h1{
+      font-size: 4rem;
+      display: block;
+    }
+    .title {
+      margin-left: 10px;
+    }
+  }
 </style>
