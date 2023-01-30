@@ -2,18 +2,16 @@
 export interface Props {
 	title: string;
 	href: string;
-	imagen: string;
+	image: string;
 }
 
-import DocsLogo from '../../assets/landing/docs.svg';
-
-const { href, title, imagen } = Astro.props;
+const { href, title, image } = Astro.props;
 ---
 
 <li class="link-card">
 	<a href={href}>
 		<h2>
-			<DocsLogo />
+			<img src={image}>
 			{title}
 		</h2>
 	</a>
