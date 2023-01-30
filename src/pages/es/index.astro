@@ -3,7 +3,7 @@ import Landing from '../../layouts/LandingLayout.astro';
 import Card from '../../components/Landing/Card.astro';
 import CardMini from '../../components/Landing/CardMini.astro'
 import NormaderaLogo from '../../components/Header/NormaderaLogo.astro'
-
+import TknikaLogo from '../../assets/tknika.png'
 import LanguageSelect from '../../components/Header/LanguageSelect';
 
 const KNOWN_LANGUAGE_CODES = ['es', 'eu'];
@@ -73,7 +73,7 @@ const lang = 'es';
   </main>
 	<div class="footer">
 		<a href="https://www.tknika.eus">
-			<img src="/assets/tknika.png" alt="Tknika logo" width="300">
+			<img src={TknikaLogo} alt="Tknika logo" width="300">
 		</a>
 	</div>
 </Landing>

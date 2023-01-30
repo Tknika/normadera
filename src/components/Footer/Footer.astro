@@ -1,20 +1,16 @@
 ---
 import AvatarList from './AvatarList.astro';
+import TknikaLogo from '../../assets/tknika.png';
+
 type Props = {
 	path: string;
 };
 const { path } = Astro.props;
 ---
 
-<!--
-<footer>
-	<AvatarList path={path} />
-</footer>
--->
-
 <div class="footer">
 		<a href="https://www.tknika.eus">
-			<img src="/assets/tknika.png" alt="Tknika logo" width="200">
+			<img src={TknikaLogo} alt="Tknika logo" width="200">
 		</a>
 </div>
 

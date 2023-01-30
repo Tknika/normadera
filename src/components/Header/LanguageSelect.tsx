@@ -30,8 +30,14 @@ const LanguageSelect: FunctionComponent<{ lang: string }> = ({ lang }) => {
         onChange={(e) => {
           const newLang = e.target.value;
           let actualDest = window.location.pathname.replace(langPathRegex, '/');
-          if (actualDest == '/') actualDest = `/`;
-          window.location.pathname = '/' + newLang + actualDest;
+          // Fixed bug when enabled base url
+          actualDest = actualDest.replace('/normadera', '');
+          if (actualDest == import.meta.env.BASE_URL) actualDest = `/`;
+          // Fixed bug when enabled base url
+          //if (actualDest == '/') actualDest = `/`;
+          //console.log(import.meta.env.BASE_URL + newLang + actualDest);
+          window.location.pathname =
+            import.meta.env.BASE_URL + newLang + actualDest;
         }}
       >
         {Object.entries(KNOWN_LANGUAGES).map(([key, value]) => {

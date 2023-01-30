@@ -22,7 +22,7 @@ const lang = getLanguageFromURL(currentPage);
 			<SidebarToggle client:idle />
 		</div>
 		<div class="logo flex">
-			<a href="/">
+			<a href=`${import.meta.env.BASE_URL}`>
 				<NormaderaLogo size={40} />
 				<h1>{SITE.title ?? 'Documentation'}</h1>
 			</a>
@@ -60,7 +60,8 @@ const lang = getLanguageFromURL(currentPage);
 		line-height: 1;
 		color: hsla(var(--color-base-white), 100%, 1);
 		gap: 0.25em;
-		z-index: -1;
+		// Disabled: fix logo link to home
+		//z-index: -1;
 	}
 
 	.logo a {
