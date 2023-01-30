@@ -10,6 +10,6 @@ export default defineConfig({
     // Enable React for the Algolia search component.
     react(),
   ],
-  site: 'https://tknika.github.io',
-  base: 'normadera',
+  site: 'https://normadera.fpeuskadi.eus',
+  base: '',
 });
