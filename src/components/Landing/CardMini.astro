@@ -11,8 +11,8 @@ const { href, title, image } = Astro.props;
 <li class="link-card">
 	<a href={href}>
 		<h2>
-			<img src={image}>
-			{title}
+			<img src={image} width="30">
+			<span class="title">{title}</span>
 		</h2>
 	</a>
 </li>
@@ -44,6 +44,7 @@ const { href, title, image } = Astro.props;
 		margin: 0;
 		font-size: 1rem;
 		transition: color 0.6s cubic-bezier(0.22, 1, 0.36, 1);
+		text-align: center;
 	}
 	p {
 		margin-top: 0.5rem;
@@ -55,5 +56,8 @@ const { href, title, image } = Astro.props;
 	}
 	.link-card:is(:hover, :focus-within) h2 {
 		color: rgb(var(--accent));
+	}
+	.title{
+		display: block;
 	}
 </style>
