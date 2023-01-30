@@ -64,3 +64,12 @@ Las entidades encargadas actualmente de la identificación de la madera en el Es
 - ETSIM (Escuela Técnica Superior de Ingenieros de Montes)
 - INIA (Instituto Nacional de Investigaciones Agrarias)
 
+**Bosque de coníferas**
+
+![Bosque de coníferas](/assets/2_1.jpg)
+![Bosque de coníferas](/assets/2_2.jpg)
+
+**Bosque de latifoliadas**
+
+![Bosque de latifoliadas](/assets/2_3.jpg)
+![Bosque de latifoliadas](/assets/2_4.jpg)
