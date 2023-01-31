@@ -31,6 +31,7 @@ const icons = [
 
 const ThemeToggle: FunctionalComponent = () => {
   const [theme, setTheme] = useState(() => {
+    /*
     if (import.meta.env.SSR) {
       return undefined;
     }
@@ -40,6 +41,8 @@ const ThemeToggle: FunctionalComponent = () => {
     if (window.matchMedia('(prefers-color-scheme: light)').matches) {
       return 'light';
     }
+    */
+    // Dark theme only
     return 'dark';
   });
 
