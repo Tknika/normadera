@@ -2,9 +2,12 @@
 import Landing from "../../layouts/LandingLayout.astro";
 import Card from "../../components/Landing/Card.astro";
 import CardMini from "../../components/Landing/CardMini.astro";
-import NormaderaLogo from "../../components/Header/NormaderaLogo.astro";
-
 import LanguageSelect from "../../components/Header/LanguageSelect";
+import NormaderaLogo from "../../components/Header/NormaderaLogo.astro";
+import TknikaLogo from "../../assets/tknika.png";
+import IconDocs from "../../assets/landing/docs.svg";
+import IconVideo from "../../assets/landing/video.svg";
+import IconGlass from "../../assets/landing/glass.svg";
 
 const KNOWN_LANGUAGE_CODES = ["es", "eu"];
 const lang = "eu";
@@ -66,23 +69,23 @@ const lang = "eu";
 			<CardMini
 				href="/"
 				title="Espezieen fitxak"
-				image="/src/assets/landing/docs.svg"
+				image={IconDocs}
 			/>
 			<CardMini
 				href="/"
 				title="Bideoak"
-				image="/src/assets/landing/video.svg"
+				image={IconVideo}
 			/>
 			<CardMini
 				href="/"
 				title="Gako dikotomikoa"
-				image="/src/assets/landing/glass.svg"
+				image={IconGlass}
 			/>
 		</ul>
 	</main>
 	<div class="footer">
 		<a href="https://www.tknika.eus">
-			<img src="/assets/tknika.png" alt="Tknika logo" width="300" />
+			<img src={TknikaLogo} alt="Tknika logo" width="300" />
 		</a>
 	</div>
 </Landing>
