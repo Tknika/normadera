@@ -1,26 +1,32 @@
 ---
-import Landing from '../../layouts/LandingLayout.astro';
-import Card from '../../components/Landing/Card.astro';
-import CardMini from '../../components/Landing/CardMini.astro'
-import NormaderaLogo from '../../components/Header/NormaderaLogo.astro'
+import Landing from "../../layouts/LandingLayout.astro";
+import Card from "../../components/Landing/Card.astro";
+import CardMini from "../../components/Landing/CardMini.astro";
+import NormaderaLogo from "../../components/Header/NormaderaLogo.astro";
 
-import LanguageSelect from '../../components/Header/LanguageSelect';
+import LanguageSelect from "../../components/Header/LanguageSelect";
 
-const KNOWN_LANGUAGE_CODES = ['es', 'eu'];
-const lang = 'eu';
-
+const KNOWN_LANGUAGE_CODES = ["es", "eu"];
+const lang = "eu";
 ---
+
 <Landing title="Normadera">
-  <header>
-    <nav class="nav-wrapper" title="Top Navigation">
-      <div style="flex-grow: 1;"></div>
-      {KNOWN_LANGUAGE_CODES.length > 1 && <LanguageSelect lang={lang} client:idle />}
-    </nav>
-  </header>
+	<header>
+		<nav class="nav-wrapper" title="Top Navigation">
+			<div style="flex-grow: 1;"></div>
+			{
+				KNOWN_LANGUAGE_CODES.length > 1 && (
+					<LanguageSelect lang={lang} client:idle />
+				)
+			}
+		</nav>
+	</header>
 	<main>
 		<h1><NormaderaLogo size={60} /><span class="title">Normadera</span></h1>
 		<p class="instructions">
-      Egitura-erabilerako zura ezaugarritzeko prestakuntzako <b>eskuliburu teknikoa</b>. <a href="0-introduccion">Informazio gehiago</a>
+			Egitura-erabilerako zura ezaugarritzeko prestakuntzako <b
+				>eskuliburu teknikoa</b
+			>. <a href="0-introduccion">Informazio gehiago</a>
 		</p>
 		<ul role="list" class="link-card-grid">
 			<Card
@@ -38,69 +44,70 @@ const lang = 'eu';
 				title="3. Zura prozesatzea"
 				body="Unitate didaktiko honetan, Douglas izei-espeziearen kudeaketa azalduko da, landatzen denetik sailkatzen den arte, prozesu bakoitzean jarraitu beharreko laneko segurtasun-baldintzak barne direla."
 			/>
-      <Card
+			<Card
 				href="4-marcado-ce-clasificacion-douglas"
 				title="4. Douglas izeiaren CE marka eta begizko sailkapena"
 				body="Unitate honetan, zuraren CE marka ezartzeko finkatutako eskakizunak azalduko dira eta Douglas izeia begiz sailkatzeko metodologiari buruzko atal didaktikoak jasoko dira."
 			/>
-      <Card
+			<Card
 				href="5-clasificacion-caracterizacion-madera-estructural"
 				title="5. Egitura-zuraren sailkapena eta hura ezaugarritzeko prozesua"
 				body="Unitate honetan, Douglas izeiaren zura ezaugarritzeko jarraitutako prozesu osoa zehazten da; zuhaitza zutik dagoenetik hasita, laborategiko saiakuntzetara iritsi arte. Era berean, espezie horretarako egindako begizko sailkapenaren eskuliburu didaktikoa barnean hartzen da."
 			/>
-      <Card
+			<Card
 				href="6-diseño de estructuras de madera"
 				title="6. Zurezko egituren diseinua"
 				body="Unitate honetan, zurezko egiturak diseinatu eta kalkulatzeari buruzko atal didaktikoak jorratuko dira, Cad-Work programa erabilita."
 			/>
 		</ul>
 	</main>
-  <main>
-    <ul role="list" class="link-minicard-grid">
-      <CardMini
-        href="/"
-        title="Espezieen fitxak"
-				image="../../assets/landing/docs.svg"
-      />
-      <CardMini
-        href="/"
-        title="Bideoak"
-				image="../../assets/landing/video.svg"
-      />
-      <CardMini
-        href="/"
-        title="Gako dikotomikoa"
-				image="../../assets/landing/glass.svg"
-      />
-    </ui>
-  </main>
+	<main>
+		<ul role="list" class="link-minicard-grid">
+			<CardMini
+				href="/"
+				title="Espezieen fitxak"
+				image="/src/assets/landing/docs.svg"
+			/>
+			<CardMini
+				href="/"
+				title="Bideoak"
+				image="/src/assets/landing/video.svg"
+			/>
+			<CardMini
+				href="/"
+				title="Gako dikotomikoa"
+				image="/src/assets/landing/glass.svg"
+			/>
+		</ul>
+	</main>
 	<div class="footer">
 		<a href="https://www.tknika.eus">
-			<img src="/assets/tknika.png" alt="Tknika logo" width="300">
+			<img src="/assets/tknika.png" alt="Tknika logo" width="300" />
 		</a>
 	</div>
 </Landing>
 
 <style>
-  html { 
-    background: url(/src/assets/landing/forest_gradient.png) no-repeat center center fixed;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-    --theme-text-accent: hsla(41, 100%, 59%, 1);
-  }
-	body{
+	html {
+		background: url(/src/assets/landing/forest_gradient.png) no-repeat
+			center center fixed;
+		-webkit-background-size: cover;
+		-moz-background-size: cover;
+		-o-background-size: cover;
+		background-size: cover;
+		--theme-text-accent: hsla(41, 100%, 59%, 1);
+	}
+	body {
 		margin: 0px;
 	}
-  header {
+	header {
 		z-index: 11;
 		height: var(--theme-navbar-height);
 		width: 100%;
 		background-color: var(--theme-navbar-bg);
-    //color: hsla(var(--color-base-white), 100%, 1);;
+		//color: hsla(var(--color-base-white), 100%, 1);;
 		color: white;
-    display: flex;
+		display: flex;
 		align-items: center;
 		justify-content: center;
 		overflow: hidden;
@@ -115,23 +122,23 @@ const lang = 'eu';
 	h1 {
 		font-size: 2rem;
 		transition: font-size 1s;
-    font-weight: 800;
-    color: hsla(41, 100%, 59%, 1);
-    background-size: 400%;
+		font-weight: 800;
+		color: hsla(41, 100%, 59%, 1);
+		background-size: 400%;
 		margin: 0;
-    text-align: center;
-    display: grid;
-    grid-template-columns: repeat(1,min-content);
-    align-content: center;
-    justify-content:center;
-    place-items: center;
+		text-align: center;
+		display: grid;
+		grid-template-columns: repeat(1, min-content);
+		align-content: center;
+		justify-content: center;
+		place-items: center;
 	}
-  a {
-    color: hsla(41, 100%, 59%, 1);
-    font-weight: 500;
-  }
- 
-  .nav-wrapper {
+	a {
+		color: hsla(41, 100%, 59%, 1);
+		font-weight: 500;
+	}
+
+	.nav-wrapper {
 		display: flex;
 		align-items: center;
 		justify-content: flex-end;
@@ -139,7 +146,7 @@ const lang = 'eu';
 		width: 100%;
 		max-width: 82em;
 		padding: 0 1rem;
-    padding-top: 1rem;
+		padding-top: 1rem;
 	}
 	.instructions {
 		line-height: 1.6;
@@ -176,26 +183,26 @@ const lang = 'eu';
 		margin: 0 auto;
 		padding-top: 1rem;
 		padding-bottom: 1rem;
-  	position: relative;
-  	width: 100%;
-  	background: black;
-		color: white;		
+		position: relative;
+		width: 100%;
+		background: black;
+		color: white;
 		text-align: center;
 	}
 
-  @media (min-width: 30em) {
-    h1{
-      font-size: 3rem;
-    }
-  }
+	@media (min-width: 30em) {
+		h1 {
+			font-size: 3rem;
+		}
+	}
 
-  @media (min-width: 40em) {
-    h1{
-      font-size: 4rem;
-      display: block;
-    }
-    .title {
-      margin-left: 10px;
-    }
-  }
+	@media (min-width: 40em) {
+		h1 {
+			font-size: 4rem;
+			display: block;
+		}
+		.title {
+			margin-left: 10px;
+		}
+	}
 </style>

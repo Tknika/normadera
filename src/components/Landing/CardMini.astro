@@ -2,15 +2,17 @@
 export interface Props {
 	title: string;
 	href: string;
+	image: string;
 }
 
-const { href, title } = Astro.props;
+const { href, title, image } = Astro.props;
 
 ---
 
 <li class="link-card">
 	<a href={href}>
 		<h2>
+			<img class="icon" src={image} width="30">
 			<span class="title">{title}</span>
 		</h2>
 	</a>
@@ -55,6 +57,9 @@ const { href, title } = Astro.props;
 	}
 	.link-card:is(:hover, :focus-within) h2 {
 		color: rgb(var(--accent));
+	}
+	.icon:hover {
+		fill: rgb(var(--accent));
 	}
 	.title{
 		display: block;
