@@ -3,8 +3,11 @@ import Landing from "../../layouts/LandingLayout.astro";
 import Card from "../../components/Landing/Card.astro";
 import CardMini from "../../components/Landing/CardMini.astro";
 import NormaderaLogo from "../../components/Header/NormaderaLogo.astro";
-import TknikaLogo from "../../assets/tknika.png";
 import LanguageSelect from "../../components/Header/LanguageSelect";
+import TknikaLogo from "../../assets/tknika.png";
+import IconDocs from "../../assets/landing/docs.svg";
+import IconVideo from "../../assets/landing/video.svg";
+import IconGlass from "../../assets/landing/glass.svg";
 
 const KNOWN_LANGUAGE_CODES = ["es", "eu"];
 const lang = "es";
@@ -65,17 +68,17 @@ const lang = "es";
 			<CardMini
 				href="/"
 				title="Fichas de especies"
-				image="../../assets/landing/docs.svg"
+				image={IconDocs}
 			/>
 			<CardMini
 				href="/"
 				title="Videos"
-				image="/src/assets/landing/video.svg"
+				image={IconVideo}
 			/>
 			<CardMini
 				href="/"
 				title="Clave dicotómica"
-				image="/src/assets/landing/glass.svg"
+				image={IconGlass}
 			/>
 		</ul>
 	</main>
