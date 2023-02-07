@@ -19,7 +19,14 @@
 	// Use 'postCreateCommand' to run commands after the container is created.
 	// "postCreateCommand": "yarn install",
 	"postCreateCommand": "npm install",
-	"postStartCommand": "nohup bash -c 'npm run dev -- --host &'"
+	"postStartCommand": "nohup bash -c 'npm run dev -- --host &'",
+	"customizations": {
+		"vscode": {
+			"extensions": [
+				"astro-build.astro-vscode"
+			]
+		}
+	}
 
 	// Configure tool-specific properties.
 	// "customizations": {},
